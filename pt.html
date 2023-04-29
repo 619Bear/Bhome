@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<canvas id="dr" style="border: 1px solid #999;" width="1000" height="1000"></canvas>
+</body> 
+<script>
+	window.onload=function () {
+		draw();
+		function draw() {
+			var c=document.getElementById('dr').getContext('2d');
+			c.translate(650,680);
+			c.beginPath();
+			c.strokeStyle='red';
+			for(var j=0;j<7;j++){
+				for(var i=0;i<7;i++){
+					c.moveTo(220,50);
+					c.lineTo(-220,50);
+					c.rotate(Math.PI * (2/7));
+					c.stroke();
+				}
+			c.translate(-220,50);
+			c.rotate(Math.PI * (2/7));
+			}
+		}
+	}
+</script>
+</html>

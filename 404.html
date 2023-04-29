@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>没想到吧！</title>
+</head>
+<body>
+	<div style="color: #00BFFF;font-family: Nyala;font-size:100px;width: 1920;height: 1080;text-align: center;">
+		404 Not Found
+	</div>
+	<div style="color: #00BFFF;font-family: Nyala;font-size:30px;width: 1920;height: 1080;text-align: center;">
+		BlueBear被达达鸭抓去喝茶了
+	</div>
+	<div style="text-align: center;">
+		<button onclick="clock()" style="background-color: #FFFFFF;">
+			<img src="404.webp" width="300" height="300">
+		</button>
+	</div>
+	<div  id="time" style="text-align: center; color: #1E90FF; font-size: 25px; font-family: 华文新魏;"></div>
+	<script>
+			var int=self.setInterval("clock()",1000);
+			function clock()
+			{
+    			document.getElementById("time").innerHTML = Date();
+			}
+	</script>
+</body>
+</html>

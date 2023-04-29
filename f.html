@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>BlueBear'HOME</title>
+<style>
+	body
+	{
+		background-image: url('bg.png');
+	}
+</style>
+</head>
+<body>
+<!--	<div style="opacity: 0.1;position: absolute;left: 90px;width: 900px;height: 630px;background-color:#FFFFFF;"></div>-->
+	<div style="opacity: 0.2;position: fixed;top: 75px;left: 998px;width: 550px;height: 550px;background-color: #BA2BE2;">
+		<iframe src="ck.html" frameborder='0' width="550" height="550"></iframe>
+	</div>
+	<div style="opacity: 0.3;position: fixed;top: 625px;left: 998px;background-color: #BA2BE2;font-size: 32px;">
+		破绽，<del>烧冻鸡翅</del>&nbsp;稍纵即逝
+	</div>
+	<div id="time" style="opacity: 0.4;position: absolute;top:440px;left: 686.4px;width: 311.2px;height: 158px;color: #FFFF00;background-color:#6633FF;font-size: 35px;font-family: 楷体;"></div>
+	<div id="bluebear" style="font-family:Viner Hand ITC;width: 950px;opacity: 0.4;position: fixed;top: 48px;left: 48px;">
+		<div id="header" style="font-size:20px;font-family:Viner Hand ITC;background-color: #99FFFF;">
+			<h1 style="margin-bottom: 0;">There are things you want to know!</h1>
+		</div>
+		<div id="menu" style="background-color:#FF66FF;height: 300px;width: 200px;float: left;">
+			<b>菜单</b>
+			<br><a href="https://www.runoob.com/html/html-tutorial.html">菜鸟教程</a>
+			<br><a href="https://www.bing.com/"target="_blank"rel="noopener noreferrer>">必应</a>
+			<br><a href="https://www.luogu.com.cn/user/940602"target="_blank"rel="noopener noreferrer">Bear的洛谷</a>
+			<br><a href="https://www.miyoushe.com/ys/">米忽悠Genshin Impact Community</a>
+			<br><a href="https://letmebingthatforyou.com/">只分享给有趣的人</a>
+			<br><a href="https://www.runoob.com/try/color.php?color=Aquamarine">Color Compile</a>
+			<br><a href="https://www.bilibili.com">小破站</a>
+			<br><a href="http://10.5.52.52/index.php?user/login">微云</a>
+		</div>
+		<div id="content" style="font-family:华文新魏;font-size: 40px;color: #DC143C;background-color:#99FFCC ;height: 300px;width:750px;float: left;">
+			<form name="input" action="html_form_action.html" method="get">
+				<label>你小子想干嘛？？？	</label>
+				<button type="submit" style="font-family:华文新魏;font-size: 25px;color: #DC143C;background-color: #FFFFF2;" value="QWQ">QWQ</button>
+			</form>
+			<form action="404.html">
+				<button type="submit" style="opacity: 0.4;font-family:华文新魏;font-size: 30px;color: #FFFFF0;background-color: #C71585;" value="相信我，这个按钮很友好">&nbsp;相信我，这个按钮很友好&nbsp;</button>
+			</form>
+			<div style="font-family:Gabriola;font-size:100px;">
+				<span style="color:#E6E6FA;">|&nbsp;</span>
+				<span id="b" style="color:#1E90FF"></span>
+				<span style="color:#FFFAFA">&nbsp;|</span>
+				<span style="color:#E6E6FA;">|</span>
+			</div>
+			<form action="MU.html">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<button style="font-family:华文行楷;font-size: 37px;color: #CD5C5C;background-color: #FAFAD2;">&nbsp;我的大学&nbsp;</button>
+			</form>
+		</div>
+		<table style="font-family:MV Boli;font-size: 30px;color:#FFFFF0;background-color: #1E90FF;clear: both;text-align: left;">
+			<tr>
+				<th>个人信息</th>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td>BlueBear</td>
+				<td>:)|(:</td>
+				<td>UID:</td>
+				<td>214668397</td>
+			</tr>
+			<tr>
+				<td>QQ:</td>
+				<td>382379967</td>
+				<td>:)|(:</td>
+				<td>WX:</td>
+				<td>b382379967</td>
+			</tr>
+		</table>
+		<div id="footer" style="font-family:Viner Hand ITC;background-color: #33FFCC;color: #0CBAFF;font-size:50px;clear: both;text-align: center;">
+			Made by Blue Bear!!!
+		</div>
+		</div>
+		
+	<script>
+			var s = Date();
+			var int=self.setInterval("clock()",1000);
+			function clock()
+			{
+    			document.getElementById("time").innerHTML = s;
+			}
+	</script>
+	<script>
+		var txt=new Array('Hello!','My name is','BlueBear');
+		const sleep = (delay) => new Promise((resolve) => setTimeout(resolve, delay))
+		async function t() {
+  		for (var i=0;i<3;i++) {
+    		await sleep(1000);
+    		var str="";
+    		for(var j=0;j<txt[i].length;j++){
+    			str=str+txt[i][j];
+    			await sleep(20);
+    			document.getElementById('b').innerHTML=str;
+    			}
+    			await sleep(15);
+    		}
+		}
+		t();
+		var int=self.setInterval("t()",4000);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
